@@ -1,0 +1,304 @@
+/*
+
+File Name: style.css
+Date:02/05/2019
+Programmer: Josh Brenneman
+*/
+
+@import "palette.less";
+@import "mixins.less";
+
+
+
+/* MOBILE STYLESHEET */
+
+body {
+    line-height: 1.5em;
+    background-color: @darkColor;
+    color: @darkColor;
+    font-family: "Lekton";
+    p, ul, ul {
+        padding: 0 .5em .5em .5em;
+    }
+     a {
+        text-decoration: none;
+        color: @lightColor;
+    }
+}
+
+main {
+    background-color: @lightColor;
+}
+
+
+
+i {
+    color: @lightColor;
+    font-size: 1.2em;
+}
+
+section h2 {
+    text-align: left;
+    padding: 0 .5em 0 .5em;
+}
+
+/* Hamburger menu */
+
+header {
+    width:100%;
+    position:fixed;
+    display:block;
+    background-color: @color1;
+    border-bottom: 1px solid;
+    
+    
+    a {
+        text-decoration: none;
+        color: @lightColor;
+        font-size: 1.2em;
+    }
+}
+
+
+
+.hamburger {
+    float: right;
+    background:none;
+    /*position:relative;*/
+    top:0;
+    right:0;
+    color: @lightColor;
+    border:0;
+    font-size:1.7em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10;
+    padding: 0 .5em 0 .5em;
+}
+
+.cross {
+    float: right;
+    background:none;
+    /*position:relative;*/
+    vertical-align: middle;
+    top:0;
+    right:0;
+    color: @lightColor;
+    border:0;
+    font-size:2em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10;
+    padding: 0 .5em 0 .5em;
+}
+
+.menu {
+    float: right;
+    position:fixed;
+    margin-top: 4em;
+    z-index:10;
+    width:50%;
+    background: @lightColor;
+    right:0;
+    text-align:center;
+    font-size:12px;
+}
+
+.menu ul {
+    list-style-type:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;
+}
+
+.menu li {
+    display:block;
+    border: @darkColor 1px solid;
+    padding: 1em;
+}
+
+.menu ul li a {
+    text-decoration:none;
+    color: @darkColor;
+    font-weight: bold;
+    margin:0;
+}
+
+.desktopMenu {
+    display: block;
+}
+
+h1 {
+  .headingStyle(@darkColor; 1.5em);
+    text-align: center;
+    font-family: "Molengo";
+    line-height: 1em;
+}
+
+h2 {
+  .headingStyle(@color1; 1em);
+    text-align: center;
+    font-family: "Molengo";
+}
+
+h3 {
+  .headingStyle(@color1; 1.2em);
+}
+
+h4 {
+  .headingStyle(@darkColor; 1em);
+    text-align: center;
+}
+
+h5 {
+  .headingStyle(@lightColor1; .85em);
+}
+
+h6 {
+  .headingStyle(@lightColor1; .75em);
+}
+
+footer {
+    background-color: @color1;
+    padding: .25em;
+    text-align: center;
+    margin-top: 0;
+    i {
+        color: @lightColor;
+        font-size: 1.2em;
+        padding: .5em;
+    }
+    a:link {
+            text-decoration: none;
+            color: @lightColor;
+            font-size: 1.2em;
+            padding-right: .5em;
+            padding-left: .5em;
+        }
+}
+
+#hero {
+    padding-top: 3em;
+    background-color: @color2;
+}
+
+#hero h1 {
+    margin-bottom: -2em;
+    text-align: center;
+}
+
+.gallery {
+    margin: .25em;
+}
+
+.gallery img {
+    width: 31.5%;
+    background-color: @color2;
+    transition: 1s;
+}
+
+.weather_and_media {
+    margin-bottom: 2em;
+}
+
+.weather_and_media img {
+    background-color: @color2;
+}
+
+.weather_and_media h2 {
+    text-align: center;
+}
+
+/*
+
+TABLET STYLESHEET
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+
+@media only screen and (min-width: 481px) {
+
+}
+
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+
+@media only screen and (min-width: 1024px) {
+
+    body {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+    header {
+        display: none;
+    }
+    
+    .gallery {
+        margin-left: 1.75em;
+    }
+    
+    .section {
+    margin: .5em .5em .5em 1.75em;
+    }
+    
+    #hero {
+        padding-top: 0;
+    }
+    
+    #hero h1 {
+        margin-top: 0;
+        margin-bottom: -3em;
+        padding-top: 1em;
+    }
+    
+    nav {
+    width: 100%;
+    line-height: 2em;
+    ul{
+       padding-right: auto;
+       padding-left: auto;
+       text-align: center;
+       list-style-type: none;
+        li{
+            font-family: "Molengo";
+            font-size: 1.1em;
+            color: @lightColor;
+            display: inline-block;
+            padding: 1em;
+            margin-left: 1em;
+            margin-right: 1em;
+            a {
+                .roundedCorners(3px; @color1);
+                padding: .5em 1em .5em 1em;
+                width: 5em;
+            &:link {
+                color: @lightColor;
+            }
+            &:visited {
+                color: @darkColor;
+            }
+            }
+        }
+    }
+}
+    .desktopMenu {
+        display: block;
+        position: sticky;
+        top: 0;
+    }
+    
+   
+        
+    
+    
+    
+}
