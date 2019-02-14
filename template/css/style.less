@@ -16,7 +16,7 @@ body {
     line-height: 1.5em;
     background-color: @darkColor;
     color: @darkColor;
-    font-family: "Lekton";
+    font-family: "Molengo";
     p, ul, ul {
         padding: 0 .5em .5em .5em;
     }
@@ -127,24 +127,24 @@ header {
 }
 
 .desktopMenu {
-    display: block;
+    display: none;
 }
 
 h1 {
-  .headingStyle(@darkColor; 1.5em);
+  .headingStyle(@color1; 1.5em);
     text-align: center;
     font-family: "Molengo";
     line-height: 1em;
 }
 
 h2 {
-  .headingStyle(@color1; 1em);
+  .headingStyle(@darkColor; 1em);
     text-align: center;
     font-family: "Molengo";
 }
 
 h3 {
-  .headingStyle(@color1; 1.2em);
+  .headingStyle(@darkColor; 1.2em);
 }
 
 h4 {
@@ -153,11 +153,11 @@ h4 {
 }
 
 h5 {
-  .headingStyle(@lightColor1; .85em);
+  .headingStyle(@darkColor; .85em);
 }
 
 h6 {
-  .headingStyle(@lightColor1; .75em);
+  .headingStyle(@darkColor; .75em);
 }
 
 footer {
@@ -165,6 +165,7 @@ footer {
     padding: .25em;
     text-align: center;
     margin-top: 0;
+    margin-bottom: 0;
     i {
         color: @lightColor;
         font-size: 1.2em;
@@ -181,13 +182,22 @@ footer {
 
 #hero {
     padding-top: 3em;
-    background-color: @color2;
+    
 }
 
 #hero h1 {
-    margin-bottom: -2em;
+    text-shadow: 2px 2px   @darkColor;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 6em;
     text-align: center;
+    background-image: url("../images/image-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
 }
+
 
 .gallery {
     margin: .25em;
@@ -210,6 +220,16 @@ footer {
 .weather_and_media h2 {
     text-align: center;
 }
+
+    .content {
+        margin: .5em;
+    }
+
+    
+    .content img {
+        background-color: @color2;
+        width: 100%;
+    }
 
 /*
 
@@ -254,11 +274,20 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
         padding-top: 0;
     }
     
-    #hero h1 {
-        margin-top: 0;
-        margin-bottom: -3em;
-        padding-top: 1em;
-    }
+   #hero h1 {
+    text-shadow: 2px 2px   @darkColor;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 8em;
+    text-align: center;
+    background-image: url("../images/image-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+    
+   
     
     nav {
     width: 100%;
@@ -284,7 +313,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
                 color: @lightColor;
             }
             &:visited {
-                color: @darkColor;
+                color: @lightColor;
             }
             }
         }
@@ -296,6 +325,35 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
         top: 0;
     }
     
+h1 {
+  .headingStyle(@color1; 3em);
+    text-align: center;
+    font-family: "Molengo";
+    line-height: 1em;
+}
+
+h2 {
+  .headingStyle(@darkColor; 1.75em);
+    text-align: center;
+    font-family: "Molengo";
+}
+
+h3 {
+  .headingStyle(@darkColor; 1.5em);
+}
+
+h4 {
+  .headingStyle(@darkColor; 1em);
+    text-align: center;
+}
+
+h5 {
+  .headingStyle(@darkColor; .85em);
+}
+
+h6 {
+  .headingStyle(@darkColor; .75em);
+}
    
         
     

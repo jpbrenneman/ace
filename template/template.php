@@ -30,49 +30,17 @@ Programmer:Josh Brenneman
 
 
     <section id="hero">
-        <h1>Heading (h1)</h1>
-        <img src="images/placeholder.png" alt="Hero Image">
+        <h1>Ace in the Hole<br>Multi Sport Events</h1>
     </section>
+
         <?php include "includes/nav2.inc.html.php"; ?>
 
-    
-    <section>
-        <h2>heading 2 (h2)</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fames ac turpis egestas integer. Risus quis varius quam quisque. Suscipit tellus mauris a diam maecenas sed enim ut. Sagittis purus sit amet volutpat consequat.
-        </p>
-    </section>
-        
-    
-        <h2>Heading 2 (h2)</h2>
-        
-        <section class="gallery">
-            <img src="images/placeholder-small.png">
-            <img src="images/placeholder-small.png">
-            <img src="images/placeholder-small.png">
-            <img src="images/placeholder-small.png">
-            <img src="images/placeholder-small.png">
-            <img src="images/placeholder-small.png">
-            <img src="images/placeholder-small.png">
-            <img src="images/placeholder-small.png">
-            <img src="images/placeholder-small.png">
+        <section class="content">
+            <h2>Heading 2 (h2)</h2>
+            <img src="images/content_placeholder.png">
         </section>
         
-        <div class="weather_and_media">
-        <section class="section group">
-        <div class="col span_6_of_12">
         
-        <h2>Heading 2 (h2)</h2>
-        <img src="images/placeholder-iframe.png">
-        </div>
-        
-        <div class="col span_6_of_12">
-        <h2>Heading 2 (h2)</h2>
-        <img src="images/placeholder-iframe.png">
-        
-        </div>
-        </section>
-        </div>
 
 
 

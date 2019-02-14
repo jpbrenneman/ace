@@ -30,9 +30,15 @@ Programmer:Josh Brenneman
         <?php include "includes/nav.inc.html.php"; ?>
     
     <section id="hero">
-        <h1>Heading (h1)</h1>
-        <img src="images/placeholder.png" alt="Hero Image">
+        <h1>Ace in the Hole<br>Multi Sport Events</h1>
     </section>
+
+        <?php include "includes/nav2.inc.html.php"; ?>
+        
+        <section class="content">
+            <h2>Heading 2 (h2)</h2>
+            <img src="images/content_placeholder.png">
+        </section>
 
 
 

@@ -6,11 +6,5 @@
     <a href="https://twitter.com">
         <i class="fab fa-twitter"></i>
     </a>
-    <a href="https://www.pinterest.com/">
-        <i class="fab fa-pinterest-p"></i>
-    </a>
-    <a href="https://www.instagram.com/">
-        <i class="fab fa-instagram"></i>
-    </a>
     <h4>footer</h4>
 </footer>

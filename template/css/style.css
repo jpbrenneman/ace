@@ -5,13 +5,32 @@ File Name: style.css
 Date:02/05/2019
 Programmer: Josh Brenneman
 */
-
+/*@color3: #6D6347;
+@color4: #605640;
+@color5: #7C9EC2;*/
+/*@darkColor3: darken(@color3, 20%);
+@darkColor4: darken(@color4, 20%);
+/*@darkColor5: darken(@color4, 20%);*/
+/*@lightColor3: lighten(@color3, 20%);
+@lightColor4: lighten(@color4, 20%);
+/*@lightColor5: lighten(@color5, 20%);*/
+/*@greyColor3: desaturate(@color3, 100%);
+@greyColor4: desaturate(@color4, 100%);
+/*@greyColor5: desaturate(@color5, 100%);*/
+/* Parametric mixin for headings */
+/* End parametric mixin for headings */
+/* Parametric rounded corners*/
+/* End parametric rounded corners*/
+/* Parametric box-shadow*/
+/* End parametric box-shadow*/
+/* Parametric mixin Linear-gradient*/
+/* End parametric mixin Linear-gradient*/
 /* MOBILE STYLESHEET */
 body {
   line-height: 1.5em;
   background-color: #000000;
   color: #000000;
-  font-family: "Lekton";
+  font-family: "Molengo";
 }
 body p,
 body ul,
@@ -109,7 +128,7 @@ header a {
   display: none;
 }
 h1 {
-  color: #000000;
+  color: #ff0000;
   font-size: 1.5em;
   font-weight: bold;
   line-height: 1.5em;
@@ -121,7 +140,7 @@ h1 {
   line-height: 1em;
 }
 h2 {
-  color: #ff0000;
+  color: #000000;
   font-size: 1em;
   font-weight: bold;
   line-height: 1em;
@@ -132,7 +151,7 @@ h2 {
   font-family: "Molengo";
 }
 h3 {
-  color: #ff0000;
+  color: #000000;
   font-size: 1.2em;
   font-weight: bold;
   line-height: 1.2em;
@@ -151,7 +170,7 @@ h4 {
   text-align: center;
 }
 h5 {
-  color: #ff6666;
+  color: #000000;
   font-size: 0.85em;
   font-weight: bold;
   line-height: 0.85em;
@@ -160,7 +179,7 @@ h5 {
   text-transform: uppercase;
 }
 h6 {
-  color: #ff6666;
+  color: #000000;
   font-size: 0.75em;
   font-weight: bold;
   line-height: 0.75em;
@@ -173,6 +192,7 @@ footer {
   padding: .25em;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 0;
 }
 footer i {
   color: #ffffff;
@@ -188,11 +208,18 @@ footer a:link {
 }
 #hero {
   padding-top: 3em;
-  background-color: #d3d3d3;
 }
 #hero h1 {
-  margin-bottom: -2em;
+  text-shadow: 2px 2px #000000;
+  font-weight: bolder;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 6em;
   text-align: center;
+  background-image: url("../images/image-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
 }
 .gallery {
   margin: .25em;
@@ -210,6 +237,13 @@ footer a:link {
 }
 .weather_and_media h2 {
   text-align: center;
+}
+.content {
+  margin: .5em;
+}
+.content img {
+  background-color: #d3d3d3;
+  width: 100%;
 }
 /*
 
@@ -243,9 +277,16 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     padding-top: 0;
   }
   #hero h1 {
+    text-shadow: 2px 2px #000000;
+    font-weight: bolder;
     margin-top: 0;
-    margin-bottom: -3em;
-    padding-top: 1em;
+    margin-bottom: 0;
+    padding-top: 8em;
+    text-align: center;
+    background-image: url("../images/image-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
   }
   nav {
     width: 100%;
@@ -278,11 +319,71 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     color: #ffffff;
   }
   nav ul li a:visited {
-    color: #000000;
+    color: #ffffff;
   }
   .desktopMenu {
     display: block;
     position: sticky;
     top: 0;
+  }
+  h1 {
+    color: #ff0000;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 3em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Molengo";
+    line-height: 1em;
+  }
+  h2 {
+    color: #000000;
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: 1.75em;
+    margin-top: 1.75em;
+    margin-bottom: 1.75em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Molengo";
+  }
+  h3 {
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+  }
+  h4 {
+    color: #000000;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h5 {
+    color: #000000;
+    font-size: 0.85em;
+    font-weight: bold;
+    line-height: 0.85em;
+    margin-top: 0.85em;
+    margin-bottom: 0.85em;
+    text-transform: uppercase;
+  }
+  h6 {
+    color: #000000;
+    font-size: 0.75em;
+    font-weight: bold;
+    line-height: 0.75em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    text-transform: uppercase;
   }
 }
