@@ -1,0 +1,88 @@
+// out: null
+
+/* Parametric mixin for headings */
+
+.headingStyle(@paramColor; @paramSize) {
+    color: @paramColor; // this accepts a font color passed through as an argument
+    font-size: @paramSize; // this accepts a font size passed through as an argument
+    font-weight: bold; // this is static code... not everything has to be dynamic!
+    line-height: @paramSize; // this reuses the same font size as before to change line height
+    margin-top: @paramSize / 1;
+    margin-bottom: @paramSize / 1;
+    text-transform: uppercase;
+}
+
+/* End parametric mixin for headings */
+/* Parametric rounded corners*/
+
+.roundedCorners(@paramRadius: 3px; @paramColor: #1F2B5C) {
+    -moz-border-radius: @paramRadius;
+    -webkit-border-radius: @paramRadius;
+    border-radius: @paramRadius;
+    background-color: @paramColor;
+}
+/* End parametric rounded corners*/
+/* Parametric box-shadow*/
+
+.dropShadow(@paramShadow: 2px 2px 2px #999FA6) {
+    -moz-box-shadow: @paramShadow;
+    -webkit- box-shadow: @paramShadow;
+    box-shadow: @paramShadow;
+}
+
+/* End parametric box-shadow*/
+/* Parametric mixin Linear-gradient*/
+
+.gradient(@paramColor1: #1f2b5c; @paramColor2: #394fa8) {  
+    background: @paramColor1; /* For browsers that do not support gradients */
+    background: -o-linear-gradient(@paramColor1, @paramColor2);
+    background: -moz-linear-gradient(@paramColor1, @paramColor2);
+    background: linear-gradient(@paramColor1, @paramColor2);
+}
+
+/* End parametric mixin Linear-gradient*/
+
+.expand() {
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+.transparent() {
+    opacity: 0.5;
+}
+
+.upperBold() {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.flip() {
+    -moz-transform: scalex(-1);
+    -o-transform: scalex(-1);
+    -webkit-transform: scalex(-1);
+    transfrom: scalex(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.italicUnder() {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.border() {
+    border: 1px solid;
+}
+
+.italic() {
+    font-style: italic;
+}
+
+.shadow() {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, .6);
+}
+
+.header() {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .6);
+    font-size: 2em;
+}

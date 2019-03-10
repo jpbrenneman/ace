@@ -1,0 +1,434 @@
+/*
+
+File Name: style.css
+Date:02/05/2019
+Programmer: Josh Brenneman
+*/
+
+@import "palette.less";
+@import "mixins.less";
+
+
+
+/* MOBILE STYLESHEET */
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    line-height: 1.5em;
+    background-color: @darkColor;
+    color: @darkColor;
+    font-family: "Molengo";
+    p, ul, ul {
+        padding: 0 .5em .5em .5em;
+    }
+     a {
+        text-decoration: none;
+        color: @lightColor;
+    }
+}
+
+main {
+    min-height: 100%;
+    background-color: @lightColor;
+}
+
+.content {
+    min-height: 100%;
+    margin: 1.25em;
+    overflow: auto;
+    padding-top: 2em;
+    padding-bottom: 6em;
+}
+
+
+
+form {
+    background-color: @color2;
+    padding: 1em;
+}
+
+input {
+    margin-bottom: 1em;
+}
+
+select {
+    margin-bottom: 1em;
+}
+
+b {
+    font-style: bold;
+}
+
+i {
+    color: @lightColor;
+    font-size: 1.2em;
+}
+
+section h2 {
+    text-align: left;
+    padding: 0 .5em 0 .5em;
+}
+
+/* Hamburger menu */
+
+header {
+    width:100%;
+    position:fixed;
+    display:block;
+    background-color: @color1;
+    border-bottom: 1px solid;
+    
+    
+    a {
+        text-decoration: none;
+        color: @lightColor;
+        font-size: 1.2em;
+    }
+}
+
+
+
+.hamburger {
+    float: right;
+    background:none;
+    /*position:relative;*/
+    top:0;
+    right:0;
+    color: @lightColor;
+    border:0;
+    font-size:1.7em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10;
+    padding: 0 .5em 0 .5em;
+}
+
+.cross {
+    float: right;
+    background:none;
+    vertical-align: middle;
+    top:0;
+    right:0;
+    color: @lightColor;
+    border:0;
+    font-size:2em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10;
+    padding: 0 .5em 0 .5em;
+}
+
+.menu {
+    float: right;
+    position:fixed;
+    margin-top: 3em;
+    z-index:10;
+    width:50%;
+    background: @lightColor;
+    right:0;
+    text-align:center;
+    font-size:12px;
+}
+
+.menu ul {
+    list-style-type:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;
+}
+
+.menu li {
+    display:block;
+    border: @darkColor 1px solid;
+    padding: 1em;
+}
+
+.menu ul li a {
+    text-decoration:none;
+    color: @darkColor;
+    font-weight: bold;
+    margin:0;
+}
+
+.desktopMenu {
+    display: none;
+}
+
+
+h1 {
+  .headingStyle(@color1; 1.5em);
+    text-align: center;
+    font-family: "Molengo";
+    line-height: 1em;
+}
+
+h2 {
+  .headingStyle(@darkColor; 1em);
+    text-align: center;
+    font-family: "Molengo";
+}
+
+h3 {
+  .headingStyle(@darkColor; .85em);
+}
+
+h4 {
+  .headingStyle(@darkColor; .75em);
+    
+}
+
+h5 {
+  .headingStyle(@darkColor; .65em);
+}
+
+h6 {
+  .headingStyle(@darkColor; .5em);
+}
+
+footer {
+    background-color: @color1;
+    padding: .25em;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 0;
+    i {
+        color: @lightColor;
+        font-size: 1.2em;
+        padding: .5em;
+    }
+    a:link {
+            text-decoration: none;
+            color: @lightColor;
+            font-size: 1.2em;
+            padding-right: .5em;
+            padding-left: .5em;
+        }
+}
+
+#hero {
+    padding-top: 2.25em;
+    
+}
+
+#hero h1 {
+    text-shadow: 2px 2px   @darkColor;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 6em;
+    text-align: center;
+    background-image: url("../images/image-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+
+
+iframe {
+    width: 100%;
+}
+
+#media {
+    display: block;
+    margin-top: 2em;
+    background-color: @color2;
+    padding: 5em .5em .5em 1em;
+}
+
+.gallery {
+    margin: 3em 0 3em .25em;
+}
+
+.gallery img {
+    width: 32%;
+    transition: 1s;
+}
+
+
+
+#honeypot {
+    display: none;
+}
+
+
+
+dd {
+    font-style: italic;
+}
+
+
+/* arrow icon left */
+
+dt:before {
+    border: 0.5em solid;
+    border-color: transparent transparent transparent @darkColor;
+    content: '';
+    display: inline-block;
+    height: 0;
+    margin-left: .5em;
+    
+    vertical-align: middle;
+    width: 0;
+}
+
+dt:hover:before {
+    border-left-color: @color1;
+
+}
+
+/* arrow icon down */
+
+dt.open:before {
+    border-color: @color1 transparent transparent transparent;
+    border-bottom-width: 0;
+}
+    
+dt.open:hover:before {
+    border-left-color: transparent;
+    border-top-color: @color1;
+}
+
+/*
+
+TABLET STYLESHEET
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+
+@media only screen and (min-width: 481px) {
+
+}
+
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+
+@media only screen and (min-width: 1024px) {
+
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    header {
+        display: none;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+   
+    
+    #hero {
+        padding-top: 0;
+    }
+    
+   #hero h1 {
+    text-shadow: 2px 2px   @darkColor;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 8em;
+    text-align: center;
+    background-image: url("../images/image-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+    
+   
+    
+    nav {
+    width: 100%;
+    line-height: 2em;
+    ul{
+       padding-right: auto;
+       padding-left: auto;
+       text-align: center;
+       list-style-type: none;
+        li{
+            font-family: "Molengo";
+            font-size: 1.1em;
+            color: @lightColor;
+            display: inline-block;
+            padding: 1em;
+            a {
+                .roundedCorners(3px; @color1);
+                padding: .5em 1em .5em 1em;
+                width: 5em;
+            &:link {
+                color: @lightColor;
+            }
+            &:visited {
+                color: @lightColor;
+            }
+            }
+        }
+    }
+}
+    .desktopMenu {
+        display: block;
+        position: sticky;
+        top: 0;
+    }
+    
+    
+    
+h1 {
+  .headingStyle(@color1; 3em);
+    text-align: center;
+    font-family: "Molengo";
+    line-height: 1em;
+}
+
+h2 {
+  .headingStyle(@darkColor; 1.75em);
+    text-align: center;
+    font-family: "Molengo";
+}
+
+h3 {
+  .headingStyle(@darkColor; 1.25em);
+}
+
+h4 {
+  .headingStyle(@darkColor; 1em);
+}
+
+h5 {
+  .headingStyle(@darkColor; .85em);
+}
+
+h6 {
+  .headingStyle(@darkColor; .75em);
+}
+    
+}
+
+/*
+
+The following CSS affects all screen sizes larger than 1280 pixels wide.
+
+*/
+
+@media only screen and (min-width: 1280px) {
+    
+body {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+}
