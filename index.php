@@ -39,11 +39,11 @@ Programmer:Josh Brenneman
         <section class="content">
             <h2>About Ace in the Whole Multisport events</h2>
             <p>
-            Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, sexual orientations, gender identities, and cultural backgrounds. We offer Events for Everybody.
+            Ace in the Hole Multi sport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, sexual orientations, gender identities, and cultural backgrounds. We offer Events for Everybody.
             </p>
             <h3>About the event</h3>
             <p>
-            The Annual Ace in the Hole Multisport Events Weekend is a legendary event in the Oregon triathlon and running community. It has become a traditional destination race for athletes from across the nation. 
+            The Annual Ace in the Hole Multi sport Events Weekend is a legendary event in the Oregon triathlon and running community. It has become a traditional destination race for athletes from across the nation. 
             </p>
             <p>
             There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, but make sure you come to have fun!
