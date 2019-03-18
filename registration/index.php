@@ -21,7 +21,8 @@ if (isset($_POST['fname']) AND empty($_POST['honeypot'])) {
     $email = $_POST['email'];
     $age = $_POST['age'];
     $genderid = $_POST['genderid'];
-    $event = $_POST['event'];
+    $satevent = $_POST['satevent'];
+    $sunevent = $_POST['sunevent'];
     $role = $_POST['role'];
     $tshirt = $_POST['tshirt'];
     $notes = $_POST['notes'];
@@ -37,7 +38,8 @@ if (isset($_POST['fname']) AND empty($_POST['honeypot'])) {
           email = :email,
           age = :age,
           genderid = :genderid,
-          event = :event,
+          satevent = :satevent,
+          sunevent = :sunevent,
           role = :role,
           tshirt = :tshirt,
           notes = :notes,
@@ -49,7 +51,8 @@ if (isset($_POST['fname']) AND empty($_POST['honeypot'])) {
         $s->bindValue(':email', $email);
         $s->bindValue(':age', $age);
         $s->bindValue(':genderid', $genderid);
-        $s->bindValue(':event', $event);
+        $s->bindValue(':satevent', $satevent);
+        $s->bindvalue(':sunevent', $sunevent);
         $s->bindValue(':role', $role);
         $s->bindValue( ':tshirt', $tshirt);
         $s->bindValue(':notes', $notes);

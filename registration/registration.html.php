@@ -37,6 +37,17 @@ Programmer:Josh Brenneman
         
         <section class="content">
             <h2>Register for an Event</h2>
+            
+            <h3>Cost Includes</h3>
+            <ul>
+                <li>Food and Beer </li>
+                <li>Access to the weekend’s live entertainment & Fitness Expo</li>
+                <li>Commemorative Finisher medal</li>
+                <li>Accurate Chip Timing for competitive races</li>
+                <li>Ace in the Hole Multisport Events Weekend Tech Shirt</li>
+                <li>Post-event party and entertainment</li>
+            </ul>
+            <p>NOTE: Tech shirts guaranteed to pre-registered participants only. </p>
             <form method="post" action=" ">
                 <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
 
@@ -59,14 +70,21 @@ Programmer:Josh Brenneman
                     <option value="non-binary">Non-Binary</option>
                 </select><br>
 
-                <label for="event">Event:</label><br>
-                <select id="event" name="event">
-                    <option value="Long Course, Saturday 7:00 A.M.">Long Course, Saturday 7:00 A.M. - $240</option>
-                    <option value="Olympic, Saturday 7:30 A.M.">Olympic, Saturday 7:30 A.M. - $110</option>
+                <label for="satevent">Saturday Event:</label><br>
+                <select id="satevent" name="satevent">
+                    <option value="none">None</option>
+                    <option value="Long Course, Saturday 7:00 A.M.">Long Course, 7:00 A.M. - $240</option>
+                    <option value="Olympic, Saturday 7:30 A.M.">Olympic, 7:30 A.M. - $110</option>
                     <option value="10K, Saturday 7:15 A.M.">10K, Saturday 7:15 A.M. - $50</option>
-                    <option value="Half Marathon, Saturday 7:15 A.M.">Half Marathon, Saturday 7:15 A.M. - $75</option>
-                    <option value="Sprint, Sunday 7:30 A.M.">Sprint, Sunday 8:00 A.M. - $90</option>
-                    <option value="Try-A-Tri, Sunday 7:30 A.M.">Try-A-Tri, Sunday 8:20 A.M. - $75</option>
+                    <option value="Half Marathon, Saturday 7:15 A.M.">Half Marathon,  7:15 A.M. - $75</option>
+                </select><br>
+                
+                <label for="sunevent">Sunday Event:</label><br>
+                <select id="sunevent" name="sunevent">
+                    <option value="none">None</option>
+                    <option value="Sprint, Sunday 7:30 A.M.">Sprint, 8:00 A.M. - $90</option>
+                    <option value="Try-A-Tri, Sunday 7:30 A.M.">Try-A-Tri, 8:20 A.M. - $75</option>
+                    <option value="Splash n Dash, Sunday 12:00 P.M.">Splash n Dash, 12:00 P.M.</option>
                 </select><br>
 
                 <label for="role">Athlete or Volunteer:</label><br>

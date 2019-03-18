@@ -2,8 +2,8 @@
 
 <!--
 Assignment Name: ace
-File Name: registration.php
-Date: 02/11/2019
+File Name: success.html.php
+Date: 03/14/2019
 Programmer:Josh Brenneman
 -->
 
@@ -43,7 +43,8 @@ Programmer:Josh Brenneman
             E-mail: <?php echo htmlspecialchars($email, ENT_QUOTES, 'UTF-8'); ?><br>
             Age: <?php echo htmlspecialchars($age, ENT_QUOTES, 'UTF-8'); ?><br>
             Gender Identification: <?php echo htmlspecialchars($genderid, ENT_QUOTES, 'UTF-8'); ?><br>
-            Event: <?php echo htmlspecialchars($event, ENT_QUOTES, 'UTF-8'); ?><br>
+            Saturday Event: <?php echo htmlspecialchars($satevent, ENT_QUOTES, 'UTF-8'); ?><br>
+            Sunday Event: <?php echo htmlspecialchars($sunevent, ENT_QUOTES, 'UTF-8'); ?><br>
             Role: <?php echo htmlspecialchars($role, ENT_QUOTES, 'UTF-8'); ?><br>
             Shirt Size: <?php echo htmlspecialchars($tshirt, ENT_QUOTES, 'UTF-8'); ?><br>
             Special Accommodations: <?php echo htmlspecialchars($notes, ENT_QUOTES, 'UTF-8'); ?><br>

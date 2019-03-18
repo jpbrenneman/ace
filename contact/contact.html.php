@@ -40,12 +40,23 @@ Programmer:Josh Brenneman
             <h2>Contact us</h2>
             <form method="post" action=" " id="inquiryForm">
                 <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
+                
                 <label for="myName">Name:</label><br>
                 <input type="text" name="myName" id="myName"><br>
+                
                 <label for="myEmail">E-mail:</label><br>
                 <input type="text" name="myEmail" id="myEmail"><br>
+                
+                <label for="role">I am a:</label><br>
+                 <select id="role" name="role">
+                    <option value="Volunteer">Volunteer</option>
+                    <option value="Athlete">Athlete</option>
+                    <option value="Interested Party">Interested Party</option>
+                </select><br>
+                
                 <label for="myQuestion">Question:</label><br>
                 <textarea form="inquiryForm" rows="10" cols="40" name="myQuestion" id="myQuestion"></textarea><br>
+                
                 <input id="mySubmit" type="submit" value="Submit">
             </form>
 

@@ -26,6 +26,7 @@ require '../PHPMailer/PHPMailerAutoload.php';
 if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
     $myName = $_POST['myName'];
     $myEmail = $_POST['myEmail'];
+    $role = $_POST['role'];
     $myQuestion = $_POST['myQuestion'];
 
 //Create a new PHPMailer instance
@@ -66,7 +67,11 @@ if (isset($_POST['myName']) AND empty($_POST['honeypot'])) {
 //$mail->addAttachment('images/phpmailer_mini.png');
 
 
-    $mail->Body = 'E-mail:' . $_POST['myEmail'] . '<br/>' . 'Name:' . $_POST['myName'] . '<br/>' . 'Question:' . $_POST['myQuestion'];
+    $mail->Body = 
+        'E-mail:' . $_POST['myEmail'] . '<br/>' . 
+        'Name:' . $_POST['myName'] . '<br/>' . 
+        'I am a:' . $_POST['role'] . '<br/>' . 
+        'Question:' . $_POST['myQuestion'];
     $mail->isHTML(true);
 
 //send the message, check for errors
